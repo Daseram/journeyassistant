@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Passengers</h1>
+
+<table class="table table-striped custab">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @passengers.each do |passenger| %>
+      <tr>
+        <td><%= passenger.name %></td>
+        <td><%= passenger.email %></td>
+        <td><%= link_to 'Show', passenger, :class => "btn btn-info" %></td>
+        <td><%= link_to 'Edit', edit_passenger_path(passenger), :class => "btn btn-default" %></td>
+        <td><%= link_to 'Destroy', passenger, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Passenger', new_passenger_path, :class => "btn btn-success" %>
+<%= link_to 'Back', root_path , :class => "btn btn-default"%>

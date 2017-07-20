@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  vehicle_id: MyString
+  passenger_id: MyString
+  initial_point: MyString
+  final_point: MyString
+
+two:
+  name: MyString
+  vehicle_id: MyString
+  passenger_id: MyString
+  initial_point: MyString
+  final_point: MyString

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @route.name %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @route.vehicle.plate %>
+</p>
+
+<p>
+  <strong>Passenger:</strong>
+  <%= @route.passenger.name %>
+</p>
+
+<p>
+  <strong>Initial point:</strong>
+  <%= @route.initial_point %>
+</p>
+
+<p>
+  <strong>Final point:</strong>
+  <%= @route.final_point %>
+</p>
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>
